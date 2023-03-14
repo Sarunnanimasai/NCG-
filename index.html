@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Political Data</title>
+  </head>
+  <body>
+    <table>
+      <tbody>
+        <tr>
+          <th>
+            <select onchange="appendData()" id="alliances">
+              <option value="All_Alliances">All Alliances</option>
+              <option value="NDA">NDA</option>
+              <option value="UPA">UPA</option>
+              <option value="MGB">MGB</option>
+              <option value="Others">OTH</option>
+            </select>
+          </th>
+          <th>
+            <select id="regions">
+              <option value="All Regions">All Regions</option>
+              <option value="EAST INDIA">EAST INDIA</option>
+              <option value="HINDI HEARTLAND">HINDI HEARTLAND</option>
+              <option value="NORTH-EAST INDIA">NORTH-EAST INDIA</option>
+              <option value="SOUTH INDIA">SOUTH INDIA</option>
+              <option value="WEST INDIA">WEST INDIA</option>
+            </select>
+          </th>
+          <th>
+            <select id="categories">
+              <option value="All Categories">All Categories</option>
+              <option value="URBAN">URBAN</option>
+              <option value="RURAL">RURAL</option>
+              <option value="RURBAN">RURBAN</option>
+              <option value="AGRARIAN">AGRARIAN</option>
+              <option value="HIGH EMPLOYMENT">HIGH EMPLOYMENT</option>
+              <option value="LOW EMPLOYMENT">LOW EMPLOYMENT</option>
+              <option value="HIGH LITERACY">HIGH LITERACY</option>
+              <option value="LOW LITERACY">LOW LITERACY</option>
+              <option value="PHASE 1">PHASE 1</option>
+              <option value="PHASE 2">PHASE 2</option>
+              <option value="PHASE 3">PHASE 3</option>
+              <option value="PHASE 4">PHASE 4</option>
+              <option value="PHASE 5">PHASE 5</option>
+              <option value="PHASE 6">PHASE 6</option>
+              <option value="PHASE 7">PHASE 7</option>
+            </select>
+          </th>
+          <th>
+            <select id="communities">
+              <option value="All Communities">All Communities</option>
+              <option value="GENERAL SEATS">GENERAL SEATS</option>
+              <option value="SC RESERVED SEATS">SC RESERVED SEATS</option>
+              <option value="ST RESERVED SEATS">ST RESERVED SEATS</option>
+              <option value="DALIT-DOMINANT">DALIT-DOMINANT</option>
+              <option value="TRIBAL-DOMINANT">TRIBAL-DOMINANT</option>
+              <option value="MUSLIM-DOMINANT">MUSLIM-DOMINANT</option>
+            </select>
+          </th>
+          <th>
+            <select id="rallies">
+              <option value="All Rallies">All Rallies</option>
+              <option value="NARENDRA MODI RALLIES">
+                NARENDRA MODI RALLIES
+              </option>
+              <option value="RAHUL GANDHI RALLIES">RAHUL GANDHI RALLIES</option>
+              <option value="AMIT SHAH RALLIES">AMIT SHAH RALLIES</option>
+            </select>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <tbody>
+        <tr>
+          <th>State Name</th>
+          <th>Month</th>
+          <th>Year</th>
+          <th>PC Number</th>
+          <th>PC Name</th>
+          <th>Pc Type</th>
+          <th>Candidate Name</th>
+          <th>Candidate Sex</th>
+          <th>Candidate category</th>
+          <th>Candidate Age</th>
+          <th>Party Abbreviation</th>
+          <th>Total Votes Polled</th>
+          <th>Position</th>
+          <th>Alliance</th>
+        </tr>
+      </tbody>
+      <tbody id="data"></tbody>
+    </table>
+  </body>
+  <script type="module" src="./index.js"></script>
+</html>
